@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div className={classes.root}>
       <div className={classes.info}>
-        <Typography variant="h4">Plan your getaway!</Typography>
+        <Typography variant="h2">Plan your getaway!</Typography>
         <Link to="/search">
           <Button variant="contained">Check our rooms</Button>
         </Link>
@@ -20,17 +20,18 @@ const Banner = () => {
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    height: "100hv",
+    height: "50vh",
     position: "relative",
     backgroundImage: `url(${backImage})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
+    borderRadius:"10px"
   },
   info: {
-    backgroundColor: "#000",
+    backgroundColor: "rgba(235,103,31,0.4)",
     color: "#fff",
     width: "350px",
-    padding: theme.spacing(12),
+    padding: theme.spacing(2),
     "& h2": {
       marginBottom: theme.spacing(2),
     },

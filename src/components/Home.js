@@ -21,7 +21,7 @@ const Home = () => {
         <Banner />
         <Grid container className={classes.section} spacing={3}>
           {mockData.map(({ src, title, description }, index) => (
-            <Grid item sm="auto" md="auto" lg="auto">
+            <Grid item sm="2" md="4" lg="6">
 
             <RoomCard
               src={src}
@@ -41,7 +41,7 @@ const useStyle = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    margin:theme.spacing(2),
+    margin:theme.spacing(1),
   },
   dates: {
     display: "flex",

@@ -30,15 +30,15 @@ const DatePicker = () => {
     <div className={classes.root}>
       <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
       <div className={classes.inputSection}>
-        <Typography variant="h5">Number of guests</Typography>
+        <Typography variant='h5'>Number of guests</Typography>
         <div className={classes.people}>
           <InputBase
             placeholder="2 pax"
-            inputProps={{ className: classes.input }}
+            inputProps={{ className:classes.input }}
           />
           <People />
-          <Button onClick={() => navigate("/search")}>Search Rooms</Button>
         </div>
+          <Button onClick={() => navigate("/search")}>Search Rooms</Button>
       </div>
     </div>
   );
@@ -47,32 +47,30 @@ const useStyle = makeStyles((theme) => ({
   root: {
     position: "absolute",
     top: "16vh",
-    left: "20vw",
+    left: "30vw",
     zIndex: "50",
-    [theme.breakpoints.down("sm")]: {
-      top: "16vh",
+    [theme.breakpoints.down("xs")]: {
+      top: "13vh",
       left: 0,
-    },
+    }
+  },
     inputSection: {
       display: "flex",
       flexDirection: "column",
       backgroundColor: "#fff",
-      height: "40px",
-    },
-    "& button:hover": {
-      backgroundColor: "rgba(255,103,31,0.4)",
-      color: "#fff",
-    },
-    "& h5": {
-      textAlign: "center",
-      backgroundColor: "#fff",
+      "& h5":{
+        textAlign: "center",
+      },
+      "& button:hover":{
+        backgroundColor:"rgba(255,103,31,0.4)"
+      }
+      
     },
     people: {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
       backgroundColor: "#fff",
-      color: "smokewhite",
     },
     input: {
       width: "7vw",
@@ -81,6 +79,6 @@ const useStyle = makeStyles((theme) => ({
       padding: theme.spacing(1, 0, 1, 3),
       backgroundColor: "#fff",
     },
-  },
+ 
 }));
 export default DatePicker;
