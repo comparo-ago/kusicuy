@@ -19,6 +19,7 @@ import { Link } from "react-router-dom"
 
 
 const Header = () => {
+  
   const [tablet, setTablet] = useState(true);
   const [droweropen, setDroweropen] = useState(true);
   const classes = useStyle();
@@ -54,7 +55,7 @@ const Header = () => {
         <IconButton
           {...{
             edge: "start",
-            color: "#ccc",
+            color: "primary",
             "aria-label": "menu",
             "aria-haspopup": "true",
             onClick: handleDrawerOpen,
@@ -123,7 +124,7 @@ const useStyle = makeStyles((theme) => ({
     alignItems: "center",
   },
   logo: {
-    height: "100px",
+    height: "70px",
     margin: theme.spacing(0, 0, 0, 1),
     borderRadius: "10px",
   },
