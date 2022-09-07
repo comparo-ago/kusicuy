@@ -8,21 +8,15 @@ import { useSelector } from "react-redux/es/exports";
 import { selectStart } from "../features/startSlice";
 import { selectEnd } from "../features/endSlice";
 
-
-
 const SearchPage = () => {
   const classes = useStyle();
-  const [value, setValue]= useState(400);
+  const [value, setValue] = useState(400);
   const start = useSelector(selectStart);
   const end = useSelector(selectEnd);
-  
-  
-  
-  
-  const handleChange = (newValue) => { 
-    setValue(newValue);
-  }
 
+  const handleChange = (newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <div className={classes.root}>
@@ -43,29 +37,33 @@ const SearchPage = () => {
         })}
       </div>
       <div className={classes.selector}>
-        <Typography gutterBottom > Prices
-        </Typography>
-          <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" 
-            min={500}
-            max={100000}
-            valueLabelDisplay="auto"
-            color="secondary"/>
+        <Typography gutterBottom> Prices</Typography>
+        <Slider
+          value={value}
+          onChange={handleChange}
+          aria-labelledby="continuous-slider"
+          min={500}
+          max={100000}
+          valueLabelDisplay="auto"
+          color="secondary"
+        />
       </div>
-      {
-        mockData
-        .filter((data)=> data.cat=== "room")
-        .filter((data)=> data.price < value )
-        .filter((data)=> end < data.notAvailableStart || start > data.notAvailableEnd)
-        .map(({src, title, description, price, stock}, index)=> (
-          <Results title={title} 
-                   key={index}
-                   src={src}
-                   description={description}
-                   price={price}
-                   stock={stock} 
-                  />  
-        ))    
-      }
+      {mockData
+        .filter((data) => data.cat === "room")
+        .filter((data) => data.price < value)
+        .filter(
+          (data) => end < data.notAvailableStart || start > data.notAvailableEnd
+        )
+        .map(({ src, title, description, price, stock }, index) => (
+          <Results
+            title={title}
+            key={index}
+            src={src}
+            description={description}
+            price={price}
+            stock={stock}
+          />
+        ))}
     </div>
   );
 };
@@ -77,13 +75,10 @@ const useStyle = makeStyles((theme) => ({
   chip: {
     margin: theme.spacing(2),
   },
-  selector:{
-    width:"300px",
-    margin:theme.spacing(3)
-  }
+  selector: {
+    width: "300px",
+    margin: theme.spacing(3),
+  },
 }));
-
-
-
 
 export default SearchPage;

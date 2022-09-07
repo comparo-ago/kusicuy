@@ -1,16 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit';
-
-
-
+import { createSlice } from "@reduxjs/toolkit";
 
 export const endSlice = createSlice({
-  name: 'end',
-  initialState:{
-    value: new Date(2022, 3, 10 ).getTime()
+  name: "end",
+  initialState: {
+    value: new Date(2022, 3, 10).getTime(),
   },
-  
+
   reducers: {
-   setEnd: (state, action) => {
+    setEnd: (state, action) => {
       state.value = action.payload;
     },
   },
@@ -18,6 +15,6 @@ export const endSlice = createSlice({
 
 export const { setEnd } = endSlice.actions;
 
-export const selectEnd = state => state.end.value;
+export const selectEnd = (state) => state.end.value;
 
 export default endSlice.reducer;
