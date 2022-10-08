@@ -21,7 +21,7 @@ const Home = () => {
         <Banner />
         <Grid container className={classes.section} spacing={3}>
           {mockData.map(({ src, title, description }, index) => (
-            <Grid item sm="2" md="4" lg="6">
+            <Grid item sm="2" md="4" lg="3">
 
             <RoomCard
               src={src}

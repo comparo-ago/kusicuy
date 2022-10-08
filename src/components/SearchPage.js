@@ -10,7 +10,7 @@ import { selectEnd } from "../features/endSlice";
 
 const SearchPage = () => {
   const classes = useStyle();
-  const [value, setValue] = useState(400);
+  const [value, setValue] = useState(10000);
   const start = useSelector(selectStart);
   const end = useSelector(selectEnd);
 
@@ -42,8 +42,8 @@ const SearchPage = () => {
           value={value}
           onChange={handleChange}
           aria-labelledby="continuous-slider"
-          min={500}
-          max={100000}
+          min={7000}
+          max={10000}
           valueLabelDisplay="auto"
           color="secondary"
         />
