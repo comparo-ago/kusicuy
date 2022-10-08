@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff326d22.css",
-    "main.js": "/static/js/main.ae57aae1.js",
-    "static/media/pexels-dmitry-zvolskiy-2253643.jpg": "/static/media/pexels-dmitry-zvolskiy-2253643.77c870501fdeff489f5b.jpg",
-    "static/media/pexels-dan-hadley-5644485.jpg": "/static/media/pexels-dan-hadley-5644485.1a1cb5eebd0e063169ae.jpg",
-    "static/media/forest-covered-trees-dry-leaves-sunlight-autumn.jpg": "/static/media/forest-covered-trees-dry-leaves-sunlight-autumn.861f425d8955da85ab70.jpg",
-    "static/media/kusiLogo.png": "/static/media/kusiLogo.905caf2b63270d842e01.png",
-    "index.html": "/index.html",
-    "main.ff326d22.css.map": "/static/css/main.ff326d22.css.map",
-    "main.ae57aae1.js.map": "/static/js/main.ae57aae1.js.map"
+    "main.css": "/kusicuy/static/css/main.ff326d22.css",
+    "main.js": "/kusicuy/static/js/main.e5767444.js",
+    "static/media/pexels-dmitry-zvolskiy-2253643.jpg": "/kusicuy/static/media/pexels-dmitry-zvolskiy-2253643.77c870501fdeff489f5b.jpg",
+    "static/media/pexels-dan-hadley-5644485.jpg": "/kusicuy/static/media/pexels-dan-hadley-5644485.1a1cb5eebd0e063169ae.jpg",
+    "static/media/forest-covered-trees-dry-leaves-sunlight-autumn.jpg": "/kusicuy/static/media/forest-covered-trees-dry-leaves-sunlight-autumn.861f425d8955da85ab70.jpg",
+    "static/media/kusiLogo.png": "/kusicuy/static/media/kusiLogo.905caf2b63270d842e01.png",
+    "index.html": "/kusicuy/index.html",
+    "main.ff326d22.css.map": "/kusicuy/static/css/main.ff326d22.css.map",
+    "main.e5767444.js.map": "/kusicuy/static/js/main.e5767444.js.map"
   },
   "entrypoints": [
     "static/css/main.ff326d22.css",
-    "static/js/main.ae57aae1.js"
+    "static/js/main.e5767444.js"
   ]
 }
